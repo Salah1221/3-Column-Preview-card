@@ -20,6 +20,10 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
+::selection {
+  background-color: rgb(255 255 255 / 0.5);
+  color: initial;
+}
 .parent {
   width: 100vw;
   height: 100vh;
@@ -117,6 +121,9 @@ img {
   text-decoration: none;
   color: var(--back-color);
   padding: 5px;
+}
+.attribution::selection {
+  background-color: rgba(135, 207, 235, 0.644);
 }
 /* Media Queries */
 @media (min-width: 745px) and (max-width: 911px) {
